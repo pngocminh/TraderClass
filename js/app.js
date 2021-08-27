@@ -217,6 +217,7 @@ function reset_password() {
     var banner = document.querySelector('.banner_home');
     var reset_password = document.querySelector('.reset-password');
     var log_in = document.querySelector('.log-in');
+    var sidebar = document.querySelector('#sidebar');
 
     window.addEventListener('mouseup', myfunc);
     function myfunc(e){
@@ -224,6 +225,7 @@ function reset_password() {
             reset_password.classList.add('active');
             header.classList.add('active');
             banner.classList.add('active');
+            sidebar.style.display = "none";
                 } else {
                     // header.classList.remove('active');
                     // banner.classList.remove('active');
@@ -233,10 +235,27 @@ function reset_password() {
                 }
     }
 
+    sidebar.style.display = "none";
     header.classList.add('active');
     banner.classList.add('active');
     reset_password.classList.toggle('active');
     log_in.classList.remove('active');
+}
+function close_popup(){
+    var header = document.querySelector('header');
+    var banner = document.querySelector('.banner_home');
+    var create_account = document.querySelector('.create-account');
+    var sidebar = document.querySelector('#sidebar');
+    var log_in = document.querySelector('.log-in');
+    var reset_password = document.querySelector('.reset-password');
+ 
+    header.classList.remove('active');
+    banner.classList.remove('active');
+    create_account.classList.remove('active');
+    log_in.classList.remove('active');
+    reset_password.classList.remove('active');
+    sidebar.style.display = "none";
+    closeSidebar();
 }
 
 
