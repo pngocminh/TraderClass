@@ -711,7 +711,8 @@ footer ul li a svg {
 
 
 /* --------------create account------------- */
-.close-popup{
+
+.close-popup {
     position: absolute;
     right: 22px;
     top: 26px;
@@ -819,6 +820,7 @@ footer ul li a svg {
     height: 48px;
     outline: 0;
     font-size: 15px;
+    padding: 15px;
 }
 
 .create-account .btn-create {
