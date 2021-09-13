@@ -10,8 +10,8 @@
 //     }
 // });
 
-function nextvideo(name) {
-    var videoFile = name;
-    $('.wrappe video source').attr('src', videoFile);
-    $(".wrappe video")[0].load();
-}
+// function nextvideo(name) {
+//     var videoFile = name;
+//     $('.wrappe video source').attr('src', videoFile);
+//     $(".wrappe video")[0].load();
+// }
